@@ -19,9 +19,9 @@ type Recipe {
   "An interesting and fun description of the recipe"
   description: String
   "How much time it takes to cook the recipe, in minutes"
-  cookingTime: Float
+  cookingTime: Float @deprecated(reason:"Use consolidated readyTime")
   "How much time it takes to prep the ingredients, in minutes"
-  prepTime: Float
+  prepTime: Float @deprecated(reason:"Use consolidated readyTime")
   "How much time it takes in total to prep and cook the recipe, in minutes"
   readyTime: Float
   "How many servings this recipe makes"
